@@ -1,0 +1,15 @@
+Reference Links
+http://bootsnipp.com/snippets/featured/custom-login-registration-amp-forgot-password
+http://bootsnipp.com/tags/login
+http://blog.getbootstrap.com/2014/10/29/bootstrap-3-3-0-released/
+https://jquery.com/download/
+
+template
+https://colorlib.com/wp/free-bootstrap-admin-dashboard-templates/
+
+
+Form Design
+http://bootsnipp.com/forms
+
+Accordion for v3.3.2 
+http://stackoverflow.com/questions/30414811/bootstrap-accordion-panel-body-not-collapsing-on-first-hit
