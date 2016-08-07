@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation"
+		value="true" />
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.custom.i18n.resources"
+		value="ApplicationResources" />
+
+	<package name="default" extends="struts-default" namespace="/">
+		<action name="login" class="com.adv.login.LoginAction" method="login">
+			<result name="success">pages/template/maintemplate.jsp</result>
+			<result name="error">pages/login/login.jsp</result>
+		</action>
+		
+		
+		<action name="product" class="com.adv.master.action.ProductAction">
+			<result name="success">pages/master/product.jsp</result>
+			<result name="error">master/error.jsp</result>			
+		</action>
+	</package>
+</struts>

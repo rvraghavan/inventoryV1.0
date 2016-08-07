@@ -1,0 +1,97 @@
+create sequence m_country_seq
+
+CREATE TABLE m_country
+(
+  country_id integer NOT NULL DEFAULT nextval('m_country_seq'::regclass),
+  country_name character varying(50) NOT NULL,
+  CONSTRAINT m_country_pk PRIMARY KEY (country_id)
+)
+
+
+CREATE SEQUENCE m_company_seq
+
+CREATE TABLE m_company
+(
+  company_id integer NOT NULL DEFAULT nextval('m_company_seq'::regclass),
+  company_name character varying(150),
+  company_code character varying(5),
+  address character varying(150),
+  email character varying(30),
+  person_incharge character varying(25),
+  relationship character varying(20),
+  currency_code character varying(10),
+  phone_no character varying(20),
+  country_id integer,
+  city_id integer,
+  isactive boolean,
+  tin_no character varying(25),
+  service_tax_no character varying(25),
+  pan_no character varying(25),
+  iec_code character varying(25),
+  default_bank character varying(15),
+  logo character varying(25),
+  company_type character varying(25),
+  financial_year_id integer,
+  CONSTRAINT company_id PRIMARY KEY (company_id),
+  CONSTRAINT company_code UNIQUE (company_code),
+  CONSTRAINT country_id_fk FOREIGN KEY (country_id)
+      REFERENCES m_country (country_id)
+)
+
+CREATE SEQUENCE m_user_seq
+
+CREATE TABLE m_user
+(
+  user_id integer NOT NULL DEFAULT nextval('m_user_seq'::regclass),
+  user_code character varying(5) NOT NULL,
+  username character varying(25) NOT NULL,
+  password character varying(25) NOT NULL,
+  address character varying(100) NOT NULL,
+  email character varying(30) NOT NULL,
+  isactive boolean NOT NULL,
+  company_id integer NOT NULL,
+  designation_id integer,
+  department_id integer,
+  is_deleted boolean,
+  mobile_number character varying,
+  role character varying(25),
+  joining_date date,
+  default_ip character varying(30),
+  from_time time without time zone,
+  to_time time without time zone,
+  reporting_to character varying(25),
+  general_remarks character varying(500),
+  last_login timestamp without time zone,
+  creditdebit character varying(10),
+  openingbal double precision,
+  amtdate date,
+  CONSTRAINT user_id_pk PRIMARY KEY (user_id),
+  CONSTRAINT company_id_fk FOREIGN KEY (company_id)
+      REFERENCES m_company (company_id)
+)
+
+
+CREATE SEQUENCE m_products_seq
+
+CREATE TABLE m_products
+(
+  product_id integer NOT NULL DEFAULT nextval('m_products_seq'::regclass),
+  product_code character varying(25),
+  product_name character varying(100),
+  product_description character varying(100),
+  product_category character varying(40),
+  size character varying(50),
+  model character varying(50),
+  serial_number character varying(35),
+  room character varying(35),
+
+  remarks character varying(100),
+  company_id integer,
+  reorder_point integer,
+  CONSTRAINT m_products_pkey PRIMARY KEY (product_id),
+   CONSTRAINT company_id_fk FOREIGN KEY (company_id)
+      REFERENCES m_company (company_id)
+)
+
+
+
