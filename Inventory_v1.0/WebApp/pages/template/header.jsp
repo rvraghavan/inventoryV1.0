@@ -61,17 +61,48 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="navbar-collapse collapse ">
-                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                        <!-- <ul id="menu-top" class="nav navbar-nav navbar-right">
                             <li><a class="" onclick="dashboardMenu()">Dashboard</a></li>                            
                             <li><a onclick="productMenu()">Products</a></li>
                             <li><a onclick="purchaseOrder()">PurchaseOrder</a></li>                                        
-                           <!--<li><a class="menu-top-active" onclick="dashboardMenu()">Dashboard</a></li>  
+                           <li><a class="menu-top-active" onclick="dashboardMenu()">Dashboard</a></li>  
                            <li><a href="table.html">Data Tables</a></li>
                             <li><a href="forms.html">Forms</a></li>
                              <li><a href="login.html">Login Page</a></li>
-                            <li><a href="blank.html">Blank Page</a></li> -->
+                            <li><a href="blank.html">Blank Page</a></li>
 
-                        </ul>
+                        </ul> -->
+                        <!-- Start  -->
+                        	<ul id="menu-top" class="nav navbar-nav navbar-left">
+                        		<li class="menu-item"><a class="" onclick="dashboardMenu()">Dashboard</a></li>     
+				            	<li class="menu-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				                 Master <b class="caret"></b></a>
+				                    <ul class="dropdown-menu submenu-item">
+				                        <li class="dropdown"> 
+				                        	<a href="#" title="" class="" data-toggle="dropdown" onclick="productMenu()">Products</a></li>
+							            <li class="dropdown"> 
+							            	<a href="#" title="" class="" data-toggle="dropdown" onclick="purchaseOrder()">PurchaseOrder</a>
+							            </li>
+					            	</ul>
+				            	</li>
+				            	<li class="menu-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				                 Transactions <b class="caret"></b></a>
+				                    <ul class="dropdown-menu submenu-item">				                        
+							            <li class="menu-item dropdown"> 
+							            	<a href="#" title="" class="" data-toggle="dropdown" onclick="purchaseOrder()">PurchaseOrder</a>
+							            </li>
+					            	</ul>
+				            	</li>
+				            	<li class="menu-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				                 Reports <b class="caret"></b></a>
+				                    <ul class="dropdown-menu submenu-item">				                        
+							            <li class="menu-item dropdown"> 
+							            	<a href="#" title="" class="" data-toggle="dropdown" onclick="poReport()">PO Report</a>
+							            </li>
+					            	</ul>
+				            	</li>
+				            </ul>
+                        <!-- /End -->
                     </div>
                 </div>
 

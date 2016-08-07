@@ -51,7 +51,7 @@
 										</div>	
 										<div class="col-md-7 input-append date" data-date="12-02-2012" data-date-format="dd/mm/yyyy" >
 										<input  type="text"  class="input-large" name="supplierInvDt" id="supplierInvDt" size="16" type="text" TabIndex="3"
-										placeholder="Ex: dd/mm/YYYY" onfocus="validonfocus();" required/>
+										placeholder="Ex: dd/mm/YYYY" required/>
 										<span class="add-on">
 										<i class="icon-calendar" onclick="showDatepicker('supplierInvDt');"></i>
 										</span>
@@ -141,5 +141,5 @@
     </div>
 </div>
 <script>
-populateProductGrid();
+//populateProductGrid();
 </script>

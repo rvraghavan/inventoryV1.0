@@ -1,5 +1,5 @@
-function menu(){
-	$("#contentDiv").load('');
+function dashboardMenu(){
+	$("#contentDiv").load('pages/template/Dashboard.jsp');
 }
 
 function productMenu(){
