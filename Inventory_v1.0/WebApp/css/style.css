@@ -223,6 +223,9 @@ footer {
     color: #fff;
     font-size: 12px;
     background-color: #C36464;
+    position: fixed;
+    bottom:0;
+    width:100%;
 }
 
     footer a, footer a:hover {

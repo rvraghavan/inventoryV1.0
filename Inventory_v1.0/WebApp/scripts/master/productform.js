@@ -89,14 +89,14 @@ function populateProductGrid(){
 function addnewentry(){
 	$('#productform')[0].reset();
 	$('#collapseOne').collapse('hide');
-	$('#accordion2').collapse('show');
+	$('#collapseTwo').collapse('show');
 	
 	$("#sAction").val('save');
 }
 function cancelEntry(){
 	$('#productform')[0].reset();
 	$('#collapseOne').collapse('show');
-	$('#accordion2').collapse('hide');
+	$('#collapseTwo').collapse('hide');
 }
 
 

@@ -30,8 +30,6 @@ public class ProductAction extends ActionSupport implements ModelDriven<ProductB
 		ProductDAO objProductDAO = new ProductDAO();
 		
 		if(sAction.equalsIgnoreCase("save")){
-			System.out.println("save:::::::Product"+sAction);
-			System.out.println("save:::::::getProductName:::::::::::::"+objProductBean.getProductName());	
 			boolean isSuccess = objProductDAO.saveProductDetails(objProductBean);
 			
 			returnname=SUCCESS;

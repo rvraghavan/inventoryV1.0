@@ -81,7 +81,7 @@
 				                        <li class="dropdown"> 
 				                        	<a href="#" title="" class="" data-toggle="dropdown" onclick="productMenu()">Products</a></li>
 							            <li class="dropdown"> 
-							            	<a href="#" title="" class="" data-toggle="dropdown" onclick="purchaseOrder()">PurchaseOrder</a>
+							            	<a href="#" title="" class="" data-toggle="dropdown" onclick="supplierMenu()">Supplier</a>
 							            </li>
 					            	</ul>
 				            	</li>
@@ -89,7 +89,7 @@
 				                 Transactions <b class="caret"></b></a>
 				                    <ul class="dropdown-menu submenu-item">				                        
 							            <li class="menu-item dropdown"> 
-							            	<a href="#" title="" class="" data-toggle="dropdown" onclick="purchaseOrder()">PurchaseOrder</a>
+							            	<a href="#" title="" class="" data-toggle="dropdown" onclick="purchaseOrder()">Purchase Order</a>
 							            </li>
 					            	</ul>
 				            	</li>

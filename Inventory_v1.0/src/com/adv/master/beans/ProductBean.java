@@ -1,6 +1,7 @@
 package com.adv.master.beans;
 
 public class ProductBean {
+	private String productId;
 	private String productName;
 	private String prodDescription;
 	private String model;
@@ -9,6 +10,14 @@ public class ProductBean {
 	private String productCategory;
 	private int reOrderPoint;
 	private String room;
+	
+	
+	public String getProductId() {
+		return productId;
+	}
+	public void setProductId(String productId) {
+		this.productId = productId;
+	}
 	public String getProductName() {
 		return productName;
 	}

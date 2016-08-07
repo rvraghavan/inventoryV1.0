@@ -125,7 +125,7 @@
 			           			<div class="col-md-6 col-md-offset-5">
 		           					<div class="form-group pull-right">
 		           						<button type="button" class="btn btn-primary" id="saveBtn" onclick="saveEntry()">Save</button>
-		           						<!-- <input type="submit" class="btn btn-danger" id="cancelBtn" onclick="javascript:cancelEntry()" value="Cancel" /> -->
+		           						<button type="button" class="btn btn-danger" id="cancelBtn" onclick="cancelEntry()">Cancel</button>
 		           					</div>
 		           				</div>
 			           		</fieldset>
