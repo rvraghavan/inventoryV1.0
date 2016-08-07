@@ -101,7 +101,7 @@ function cancelEntry(){
 
 
 function saveEntry(){
-	doAjaxSubmitForm('product.action','productform','ContentDiv')
+	doAjaxSubmitForm('product.action','productform','contentDiv')
 }
 
-
+//@ sourceURL=/scripts/master/productform.js

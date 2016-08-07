@@ -11,7 +11,7 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 
-public class ProductAction extends BaseAction implements ModelDriven<ProductBean> {
+public class ProductAction extends ActionSupport implements ModelDriven<ProductBean> {
 
 	ProductBean objProductBean = null;
 	@Override
@@ -28,13 +28,15 @@ public class ProductAction extends BaseAction implements ModelDriven<ProductBean
 		String sAction = request.getParameter("sAction");
 		
 		ProductDAO objProductDAO = new ProductDAO();
-		System.out.println("save:::::::Product"+sAction);
+		
 		if(sAction.equalsIgnoreCase("save")){
-			
+			System.out.println("save:::::::Product"+sAction);
+			System.out.println("save:::::::getProductName:::::::::::::"+objProductBean.getProductName());	
 			boolean isSuccess = objProductDAO.saveProductDetails(objProductBean);
 			
 			returnname=SUCCESS;
 		}
+		System.out.println("returnname:::::::Product::::::::::::::"+returnname);
 		return returnname;
 	}
 

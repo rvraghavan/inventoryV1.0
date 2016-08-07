@@ -45,6 +45,8 @@
 			           			<div class="col-md-12">
 			           				<div class="col-md-6">
 			           					<div class="form-group">
+			           					
+			           					
 										  <label class="col-md-5 control-label" for="textinput">Product Name</label>  
 										  <div class="col-md-7">
 										  	<input id="txtProductName" name="productName" type="text" placeholder="" class="form-control input-md" />					 	  
@@ -122,7 +124,7 @@
 			           			</div>
 			           			<div class="col-md-6 col-md-offset-5">
 		           					<div class="form-group pull-right">
-		           						<button class="btn btn-primary" id="saveBtn" onclick="saveEntry()">Save</button>
+		           						<button type="button" class="btn btn-primary" id="saveBtn" onclick="saveEntry()">Save</button>
 		           						<!-- <input type="submit" class="btn btn-danger" id="cancelBtn" onclick="javascript:cancelEntry()" value="Cancel" /> -->
 		           					</div>
 		           				</div>

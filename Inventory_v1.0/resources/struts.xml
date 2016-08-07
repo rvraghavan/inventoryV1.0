@@ -16,9 +16,9 @@
 		</action>
 		
 		
-		<action name="products" class="com.adv.master.action.ProductAction">
-			<result name="SUCCESS">pages/master/product.jsp</result>
-			<result name="ERROR">master/error.jsp</result>			
+		<action name="product" class="com.adv.master.action.ProductAction">
+			<result name="success">pages/master/product.jsp</result>
+			<result name="error">master/error.jsp</result>			
 		</action>
 	</package>
 </struts>

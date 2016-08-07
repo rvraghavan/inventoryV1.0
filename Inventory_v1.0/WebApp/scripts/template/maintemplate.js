@@ -29,7 +29,7 @@ function doAjaxGET(URL,divId){
 }
 
 function doAjaxSubmitForm(URL,formId,divId){	
-	
+	debugger;
 	
 	$.ajax(
           {
@@ -39,15 +39,14 @@ function doAjaxSubmitForm(URL,formId,divId){
               async:true,
               success: function(response)
               {
+            	  console.log(response);
             	  try {
 		        	  $('#'+divId).html("");
 		        	  $('#'+divId).html(response);  
-		        	  $("#contentDiv").oLoader('hide');
             	  }
             	  catch (err) {
 	                //  alert(err);
             		  console.log(err);
-            		  $("#contentDiv").oLoader('hide');
 	              }
               },
               error: function()
