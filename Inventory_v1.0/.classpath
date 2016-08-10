@@ -3,11 +3,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="resources"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<!-- <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
-		<attributes>
-			<attribute name="owner.project.facets" value="java"/>
-		</attributes>
-	</classpathentry> -->
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="WebApp/WEB-INF/lib/activation.jar"/>
@@ -57,6 +52,6 @@
 	<classpathentry kind="lib" path="WebApp/WEB-INF/lib/struts2-dojo-plugin-2.1.2.jar"/>
 	<classpathentry kind="lib" path="WebApp/WEB-INF/lib/xmlbeans-2.3.0.jar"/>
 	<classpathentry kind="lib" path="WebApp/WEB-INF/lib/xwork-core-2.3.1.2.jar"/>
-	<classpathentry kind="lib" path="F:/Dev_Softwares/apache-tomcat-7.0.23/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="D:/SOFTWARES_Collectionzzz/server/apache-tomcat-7.0.23/lib/servlet-api.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

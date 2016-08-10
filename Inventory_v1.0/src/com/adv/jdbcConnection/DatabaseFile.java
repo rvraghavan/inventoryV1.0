@@ -13,12 +13,9 @@ public class DatabaseFile {
         ResultSet rs = null;
         
         try
-        {
-            
-            Class.forName("org.postgresql.Driver");
-            
-            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/StudentMgMt", "postgres", "arulmozhi");
-            
+        {            
+            Class.forName("org.postgresql.Driver");            
+            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/StudentMgMt", "postgres", "arulmozhi");            
             Statement  st  = con.createStatement();
             
             rs  = st.executeQuery(sql);
